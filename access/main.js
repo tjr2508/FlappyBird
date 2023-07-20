@@ -98,11 +98,3 @@ const render = () => {
   // tell the browser to perform anim
   window.requestAnimationFrame(render);
 }
-
-// launch setup
-setup();
-img.onload = render;
-
-// start game
-document.addEventListener('click', () => gamePlaying = true);
-window.onclick = () => flight = jump;
